@@ -55,7 +55,6 @@ select models where id ends with ":free"
 select models where pricing.prompt == "0" AND pricing.completion == "0"
 ```
 
-Models listed in `MANUAL_ADDITIONS` inside `install.py` are force-included regardless, for models that are free but inconsistently tagged in the API.
 
 ---
 
@@ -67,7 +66,6 @@ Models listed in `MANUAL_ADDITIONS` inside `install.py` are force-included regar
 |---|---|
 | `minimax/minimax-m2.5:free` | MiniMax: MiniMax M2.5 (free) |
 | `z-ai/glm-5:free` | Z.ai: GLM 5 (free) |
-
 | `arcee-ai/trinity-large-preview:free` | Arcee AI: Trinity Large Preview (free) |
 | `corethink:free` | CoreThink (free) |
 | `openrouter/free` | Free Models Router (free) |
