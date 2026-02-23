@@ -13,13 +13,47 @@ Enable Opencode to use Kilo AI Free so you can use Kilo's free model gateway and
 
 ---
 
-## Install / Update
+## Quick Install (one-liner)
+
+Copy and run one of these commands:
+
+### Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/ang-or-five/opencode-kilo-free-provider/refs/heads/main/install.py | python
+```
+
+### macOS / Linux (curl)
+```bash
+curl -sSL https://raw.githubusercontent.com/ang-or-five/opencode-kilo-free-provider/refs/heads/main/install.py | python
+```
+
+This fetches the latest `install.py` directly from GitHub and runs it. On every run, it **fetches the live model catalogue** from Kilo AI, filters for free models, and deep-merges the result into your `opencode.json`. Running the command again later updates the model list.
+
+---
+
+## Models (last known list)
+
+> **Featured**: **MiniMax** and **Z.ai** — flagship models available completely free.
+
+| Model ID | Display name |
+|---|---|
+| `minimax/minimax-m2.5:free` | MiniMax: MiniMax M2.5 (free) |
+| `z-ai/glm-5:free` | Z.ai: GLM 5 (free) |
+| `arcee-ai/trinity-large-preview:free` | Arcee AI: Trinity Large Preview (free) |
+| `corethink:free` | CoreThink (free) |
+| `openrouter/free` | Free Models Router (free) |
+| `qwen/qwen3-235b-a22b-thinking-2507` | Qwen: Qwen3 235B A22B Thinking 2507 |
+| `qwen/qwen3-vl-235b-a22b-thinking` | Qwen: Qwen3 VL 235B A22B Thinking |
+| `qwen/qwen3-vl-30b-a3b-thinking` | Qwen: Qwen3 VL 30B A3B Thinking |
+| `stepfun/step-3.5-flash:free` | StepFun: Step 3.5 Flash (free) |
+
+---
+
+## Install / Update (manual)
 
 ```bash
 python install.py
 ```
-
-On every run, `install.py` **fetches the live model catalogue** from Kilo AI, filters for free models, and deep-merges the result into your `opencode.json`. Running it again later is how you update the model list.
 
 Options:
 
@@ -58,21 +92,7 @@ select models where pricing.prompt == "0" AND pricing.completion == "0"
 
 ---
 
-## Models (last known list)
-
-> **Featured**: **MiniMax** and **Z.ai** — flagship models available completely free.
-
-| Model ID | Display name |
-|---|---|
-| `minimax/minimax-m2.5:free` | MiniMax: MiniMax M2.5 (free) |
-| `z-ai/glm-5:free` | Z.ai: GLM 5 (free) |
-| `arcee-ai/trinity-large-preview:free` | Arcee AI: Trinity Large Preview (free) |
-| `corethink:free` | CoreThink (free) |
-| `openrouter/free` | Free Models Router (free) |
-| `qwen/qwen3-235b-a22b-thinking-2507` | Qwen: Qwen3 235B A22B Thinking 2507 |
-| `qwen/qwen3-vl-235b-a22b-thinking` | Qwen: Qwen3 VL 235B A22B Thinking |
-| `qwen/qwen3-vl-30b-a3b-thinking` | Qwen: Qwen3 VL 30B A3B Thinking |
-| `stepfun/step-3.5-flash:free` | StepFun: Step 3.5 Flash (free) |## Uninstall
+## Uninstall
 
 ```bash
 python uninstall.py
