@@ -23,4 +23,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: sync free models from Kilo API"
-          file_pattern: "install.py README.md"
+          file_pattern: "install.py README.md example-config.json"

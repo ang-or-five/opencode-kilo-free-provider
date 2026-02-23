@@ -4,6 +4,7 @@ sync_models.py — Syncs the live model list to install.py and README.md.
 This script fetches the current free models from the Kilo API and updates:
   1. FALLBACK_MODELS in install.py — for offline mode
   2. README.md model table — for documentation
+  3. example-config.json models — for manual install reference
 
 Usage
 -----
@@ -21,6 +22,7 @@ import urllib.error
 MODELS_URL = "https://api.kilo.ai/api/openrouter/models"
 INSTALL_PATH = os.path.join(os.path.dirname(__file__), "install.py")
 README_PATH = os.path.join(os.path.dirname(__file__), "README.md")
+EXAMPLE_PATH = os.path.join(os.path.dirname(__file__), "example-config.json")
 
 
 def fetch_models(url: str) -> list[dict] | None:
@@ -129,6 +131,24 @@ def update_readme(readme_path: str, models: dict[str, str]) -> None:
     print(f"Updated model table in {readme_path}")
 
 
+def update_example_config(example_path: str, models: dict[str, str]) -> None:
+    """Update the models section in example-config.json."""
+    with open(example_path, "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+    models_config = {}
+    for mid, name in sorted(models.items()):
+        models_config[mid] = {"name": f"{name} [Kilo Free]"}
+
+    config["provider"]["kilo-gateway-free"]["models"] = models_config
+
+    with open(example_path, "w", encoding="utf-8") as f:
+        json.dump(config, f, indent=2)
+        f.write("\n")
+
+    print(f"Updated models in {example_path}")
+
+
 def main():
     dry_run = "--dry-run" in sys.argv
 
@@ -151,6 +171,7 @@ def main():
 
     update_install_py(INSTALL_PATH, models)
     update_readme(README_PATH, models)
+    update_example_config(EXAMPLE_PATH, models)
 
     print("\nSync complete. Commit the updated files.")
 
