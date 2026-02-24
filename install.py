@@ -24,9 +24,17 @@ import urllib.error
 MODELS_URL   = "https://api.kilo.ai/api/openrouter/models"
 PROVIDER_KEY = "kilo-gateway-free"
 
+# Manual model additions not available via the API
+MANUAL_MODELS: dict[str, str] = {
+    "giga-potato": "Giga Potato (free)",
+    "giga-potato-thinking": "Giga Potato Thinking (free)",
+}
+
 FALLBACK_MODELS: dict[str, str] = {
     "arcee-ai/trinity-large-preview:free": "Arcee AI: Trinity Large Preview (free)",
     "corethink:free": "CoreThink (free)",
+    "giga-potato": "Giga Potato (free)",
+    "giga-potato-thinking": "Giga Potato Thinking (free)",
     "minimax/minimax-m2.5:free": "MiniMax: MiniMax M2.5 (free)",
     "openrouter/free": "Free Models Router (free)",
     "qwen/qwen3-235b-a22b-thinking-2507": "Qwen: Qwen3 235B A22B Thinking 2507",
@@ -102,7 +110,12 @@ def collect_free_models(models: list[dict]) -> dict[str, str]:
     for m in by_suffix + by_pricing:
         results[m["id"]] = m.get("name", m["id"])
 
-    print(f"  → {len(results)} free models total")
+    # Add manual models not available via API
+    for mid, name in MANUAL_MODELS.items():
+        results[mid] = name
+        print(f"  → Added manual model: {mid} ({name})")
+
+    print(f"  → {len(results)} free models total (including {len(MANUAL_MODELS)} manual additions)")
     return results
 
 

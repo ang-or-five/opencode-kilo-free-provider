@@ -24,6 +24,12 @@ INSTALL_PATH = os.path.join(os.path.dirname(__file__), "install.py")
 README_PATH = os.path.join(os.path.dirname(__file__), "README.md")
 EXAMPLE_PATH = os.path.join(os.path.dirname(__file__), "example-config.json")
 
+# Manual model additions not available via the API
+MANUAL_MODELS: dict[str, str] = {
+    "giga-potato": "Giga Potato (free)",
+    "giga-potato-thinking": "Giga Potato Thinking (free)",
+}
+
 
 def fetch_models(url: str) -> list[dict] | None:
     """Download the model catalogue. Returns None on failure."""
@@ -60,7 +66,12 @@ def collect_free_models(models: list[dict]) -> dict[str, str]:
     for m in by_suffix + by_pricing:
         results[m["id"]] = m.get("name", m["id"])
 
-    print(f"  -> {len(results)} free models total")
+    # Add manual models not available via API
+    for mid, name in MANUAL_MODELS.items():
+        results[mid] = name
+        print(f"  -> Added manual model: {mid} ({name})")
+
+    print(f"  -> {len(results)} free models total (including {len(MANUAL_MODELS)} manual additions)")
     return results
 
 

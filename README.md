@@ -39,17 +39,16 @@ This fetches the latest `install.py` directly from GitHub and runs it. On every 
 |---|---|
 | `minimax/minimax-m2.5:free` | MiniMax: MiniMax M2.5 (free) |
 | `z-ai/glm-5:free` | Z.ai: GLM 5 (free) |
+
 | `arcee-ai/trinity-large-preview:free` | Arcee AI: Trinity Large Preview (free) |
 | `corethink:free` | CoreThink (free) |
+| `giga-potato` | Giga Potato (free) |
+| `giga-potato-thinking` | Giga Potato Thinking (free) |
 | `openrouter/free` | Free Models Router (free) |
 | `qwen/qwen3-235b-a22b-thinking-2507` | Qwen: Qwen3 235B A22B Thinking 2507 |
 | `qwen/qwen3-vl-235b-a22b-thinking` | Qwen: Qwen3 VL 235B A22B Thinking |
 | `qwen/qwen3-vl-30b-a3b-thinking` | Qwen: Qwen3 VL 30B A3B Thinking |
-| `stepfun/step-3.5-flash:free` | StepFun: Step 3.5 Flash (free) |
-
----
-
-## Install / Update (manual)
+| `stepfun/step-3.5-flash:free` | StepFun: Step 3.5 Flash (free) |## Install / Update (manual)
 
 ```bash
 python install.py
