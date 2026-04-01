@@ -113,6 +113,14 @@ def get_featured_models(models: dict[str, str]) -> list[tuple[str, str]]:
 def update_readme(readme_path: str, models: dict[str, str]) -> None:
     """Update the model table in README.md."""
     featured = get_featured_models(models)
+    
+    # Validate that we have both featured models
+    if len(featured) < 2:
+        print(f"Warning: Expected 2 featured models, but found {len(featured)}.## Problem
+
+The job is failing at line 132 in `sync_models.py` with an Skipping README update.")
+        return
+    
     other_models = [(mid, name) for mid, name in sorted(models.items())
                      if mid not in ["minimax/minimax-m2.5:free", "z-ai/glm-5:free"]]
 
