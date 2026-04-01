@@ -122,7 +122,14 @@ The job is failing at line 132 in `sync_models.py` with an Skipping README updat
         return
     
     other_models = [(mid, name) for mid, name in sorted(models.items())
-                     if mid not in ["minimax/minimax-m2.5:free", "z-ai/glm-5:free"]]
+                    if mid not in ["minimax/minimax-m2.5:free", "z-ai/glm-5:free"]]
+
+    if not featured:
+        featured_header = "## Models (last known list)\n\n> No featured models currently available."
+    elif len(featured) == 1:
+        featured_header = f"## Models (last known list)\n\n> **Featured**: **{featured[0][1].split(':')[0]}** — flagship model available completely free."
+    else:
+        featured_header = f"## Models (last known list)\n\n> **Featured**: **{featured[0][1].split(':')[0]}** and **{featured[1][1].split(':')[0]}** — flagship models available completely free."
 
     table_lines = ["| Model ID | Display name |", "|---|---|"]
 
