@@ -116,9 +116,10 @@ def update_readme(readme_path: str, models: dict[str, str]) -> None:
     
     # Validate that we have both featured models
     if len(featured) < 2:
-        print(f"Warning: Expected 2 featured models, but found {len(featured)}.## Problem
-
-The job is failing at line 132 in `sync_models.py` with an Skipping README update.")
+        print(
+            f"Warning: Expected 2 featured models, but found {len(featured)}. "
+            "Skipping README update."
+        )
         return
     
     other_models = [(mid, name) for mid, name in sorted(models.items())
