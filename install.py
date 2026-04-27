@@ -31,17 +31,19 @@ MANUAL_MODELS: dict[str, str] = {
 }
 
 FALLBACK_MODELS: dict[str, str] = {
-    "arcee-ai/trinity-large-preview:free": "Arcee AI: Trinity Large Preview (free)",
-    "corethink:free": "CoreThink (free)",
+    "baidu/qianfan-ocr-fast:free": "Baidu: Qianfan-OCR-Fast (free)",
     "giga-potato": "Giga Potato (free)",
     "giga-potato-thinking": "Giga Potato Thinking (free)",
-    "minimax/minimax-m2.5:free": "MiniMax: MiniMax M2.5 (free)",
-    "openrouter/free": "Free Models Router (free)",
-    "qwen/qwen3-235b-a22b-thinking-2507": "Qwen: Qwen3 235B A22B Thinking 2507",
-    "qwen/qwen3-vl-235b-a22b-thinking": "Qwen: Qwen3 VL 235B A22B Thinking",
-    "qwen/qwen3-vl-30b-a3b-thinking": "Qwen: Qwen3 VL 30B A3B Thinking",
+    "google/lyria-3-clip-preview": "Google: Lyria 3 Clip Preview",
+    "google/lyria-3-pro-preview": "Google: Lyria 3 Pro Preview",
+    "inclusionai/ling-2.6-1t:free": "inclusionAI: Ling-2.6-1T (free)",
+    "inclusionai/ling-2.6-flash:free": "inclusionAI: Ling-2.6-flash (free)",
+    "kilo-auto/free": "Kilo Auto Free",
+    "nvidia/nemotron-3-super-120b-a12b:free": "NVIDIA: Nemotron 3 Super (free)",
+    "openrouter/free": "Free Models Router",
     "stepfun/step-3.5-flash:free": "StepFun: Step 3.5 Flash (free)",
-    "z-ai/glm-5:free": "Z.ai: GLM 5 (free)",
+    "tencent/hy3-preview:free": "Tencent: Hy3 preview (free)",
+    "x-ai/grok-code-fast-1:optimized:free": "xAI: Grok Code Fast 1 Optimized (free)",
 }
 
 

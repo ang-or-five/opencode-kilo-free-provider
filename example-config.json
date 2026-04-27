@@ -12,11 +12,8 @@
         }
       },
       "models": {
-        "arcee-ai/trinity-large-preview:free": {
-          "name": "Arcee AI: Trinity Large Preview (free) [Kilo Free]"
-        },
-        "corethink:free": {
-          "name": "CoreThink (free) [Kilo Free]"
+        "baidu/qianfan-ocr-fast:free": {
+          "name": "Baidu: Qianfan-OCR-Fast (free) [Kilo Free]"
         },
         "giga-potato": {
           "name": "Giga Potato (free) [Kilo Free]"
@@ -24,26 +21,35 @@
         "giga-potato-thinking": {
           "name": "Giga Potato Thinking (free) [Kilo Free]"
         },
-        "minimax/minimax-m2.5:free": {
-          "name": "MiniMax: MiniMax M2.5 (free) [Kilo Free]"
+        "google/lyria-3-clip-preview": {
+          "name": "Google: Lyria 3 Clip Preview [Kilo Free]"
+        },
+        "google/lyria-3-pro-preview": {
+          "name": "Google: Lyria 3 Pro Preview [Kilo Free]"
+        },
+        "inclusionai/ling-2.6-1t:free": {
+          "name": "inclusionAI: Ling-2.6-1T (free) [Kilo Free]"
+        },
+        "inclusionai/ling-2.6-flash:free": {
+          "name": "inclusionAI: Ling-2.6-flash (free) [Kilo Free]"
+        },
+        "kilo-auto/free": {
+          "name": "Kilo Auto Free [Kilo Free]"
+        },
+        "nvidia/nemotron-3-super-120b-a12b:free": {
+          "name": "NVIDIA: Nemotron 3 Super (free) [Kilo Free]"
         },
         "openrouter/free": {
-          "name": "Free Models Router (free) [Kilo Free]"
-        },
-        "qwen/qwen3-235b-a22b-thinking-2507": {
-          "name": "Qwen: Qwen3 235B A22B Thinking 2507 [Kilo Free]"
-        },
-        "qwen/qwen3-vl-235b-a22b-thinking": {
-          "name": "Qwen: Qwen3 VL 235B A22B Thinking [Kilo Free]"
-        },
-        "qwen/qwen3-vl-30b-a3b-thinking": {
-          "name": "Qwen: Qwen3 VL 30B A3B Thinking [Kilo Free]"
+          "name": "Free Models Router [Kilo Free]"
         },
         "stepfun/step-3.5-flash:free": {
           "name": "StepFun: Step 3.5 Flash (free) [Kilo Free]"
         },
-        "z-ai/glm-5:free": {
-          "name": "Z.ai: GLM 5 (free) [Kilo Free]"
+        "tencent/hy3-preview:free": {
+          "name": "Tencent: Hy3 preview (free) [Kilo Free]"
+        },
+        "x-ai/grok-code-fast-1:optimized:free": {
+          "name": "xAI: Grok Code Fast 1 Optimized (free) [Kilo Free]"
         }
       }
     }
