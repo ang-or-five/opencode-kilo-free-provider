@@ -30,17 +30,23 @@
         "inclusionai/ling-2.6-1t:free": {
           "name": "inclusionAI: Ling-2.6-1T (free) [Kilo Free]"
         },
-        "inclusionai/ling-2.6-flash:free": {
-          "name": "inclusionAI: Ling-2.6-flash (free) [Kilo Free]"
-        },
         "kilo-auto/free": {
           "name": "Kilo Auto Free [Kilo Free]"
+        },
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free) [Kilo Free]"
         },
         "nvidia/nemotron-3-super-120b-a12b:free": {
           "name": "NVIDIA: Nemotron 3 Super (free) [Kilo Free]"
         },
         "openrouter/free": {
           "name": "Free Models Router [Kilo Free]"
+        },
+        "poolside/laguna-m.1:free": {
+          "name": "Poolside: Laguna M.1 (free) [Kilo Free]"
+        },
+        "poolside/laguna-xs.2:free": {
+          "name": "Poolside: Laguna XS.2 (free) [Kilo Free]"
         },
         "stepfun/step-3.5-flash:free": {
           "name": "StepFun: Step 3.5 Flash (free) [Kilo Free]"
