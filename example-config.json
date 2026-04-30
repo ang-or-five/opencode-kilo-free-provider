@@ -31,7 +31,7 @@
           "name": "inclusionAI: Ling-2.6-1T (free) [Kilo Free]"
         },
         "kilo-auto/free": {
-          "name": "Kilo Auto Free [Kilo Free]"
+          "name": "Auto Free [Kilo Free]"
         },
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
           "name": "NVIDIA: Nemotron 3 Nano Omni (free) [Kilo Free]"

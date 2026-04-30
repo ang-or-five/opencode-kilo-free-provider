@@ -37,7 +37,7 @@ FALLBACK_MODELS: dict[str, str] = {
     "google/lyria-3-clip-preview": "Google: Lyria 3 Clip Preview",
     "google/lyria-3-pro-preview": "Google: Lyria 3 Pro Preview",
     "inclusionai/ling-2.6-1t:free": "inclusionAI: Ling-2.6-1T (free)",
-    "kilo-auto/free": "Kilo Auto Free",
+    "kilo-auto/free": "Auto Free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "NVIDIA: Nemotron 3 Nano Omni (free)",
     "nvidia/nemotron-3-super-120b-a12b:free": "NVIDIA: Nemotron 3 Super (free)",
     "openrouter/free": "Free Models Router",
