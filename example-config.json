@@ -42,6 +42,9 @@
         "openrouter/free": {
           "name": "Free Models Router [Kilo Free]"
         },
+        "openrouter/owl-alpha": {
+          "name": "Owl Alpha [Kilo Free]"
+        },
         "poolside/laguna-m.1:free": {
           "name": "Poolside: Laguna M.1 (free) [Kilo Free]"
         },
