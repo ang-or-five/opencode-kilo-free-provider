@@ -12,6 +12,9 @@
         }
       },
       "models": {
+        "baidu/cobuddy:free": {
+          "name": "Baidu Qianfan: CoBuddy (free) [Kilo Free]"
+        },
         "baidu/qianfan-ocr-fast:free": {
           "name": "Baidu: Qianfan-OCR-Fast (free) [Kilo Free]"
         },

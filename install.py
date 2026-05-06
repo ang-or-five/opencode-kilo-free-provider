@@ -31,6 +31,7 @@ MANUAL_MODELS: dict[str, str] = {
 }
 
 FALLBACK_MODELS: dict[str, str] = {
+    "baidu/cobuddy:free": "Baidu Qianfan: CoBuddy (free)",
     "baidu/qianfan-ocr-fast:free": "Baidu: Qianfan-OCR-Fast (free)",
     "giga-potato": "Giga Potato (free)",
     "giga-potato-thinking": "Giga Potato Thinking (free)",
