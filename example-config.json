@@ -30,9 +30,6 @@
         "google/lyria-3-pro-preview": {
           "name": "Google: Lyria 3 Pro Preview [Kilo Free]"
         },
-        "inclusionai/ling-2.6-1t:free": {
-          "name": "inclusionAI: Ling-2.6-1T (free) [Kilo Free]"
-        },
         "kilo-auto/free": {
           "name": "Auto Free [Kilo Free]"
         },
