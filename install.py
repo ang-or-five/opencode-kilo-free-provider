@@ -37,6 +37,7 @@ FALLBACK_MODELS: dict[str, str] = {
     "giga-potato-thinking": "Giga Potato Thinking (free)",
     "google/lyria-3-clip-preview": "Google: Lyria 3 Clip Preview",
     "google/lyria-3-pro-preview": "Google: Lyria 3 Pro Preview",
+    "inclusionai/ring-2.6-1t:free": "inclusionAI: Ring-2.6-1T (free)",
     "kilo-auto/free": "Auto Free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "NVIDIA: Nemotron 3 Nano Omni (free)",
     "nvidia/nemotron-3-super-120b-a12b:free": "NVIDIA: Nemotron 3 Super (free)",
@@ -45,8 +46,7 @@ FALLBACK_MODELS: dict[str, str] = {
     "poolside/laguna-m.1:free": "Poolside: Laguna M.1 (free)",
     "poolside/laguna-xs.2:free": "Poolside: Laguna XS.2 (free)",
     "stepfun/step-3.5-flash:free": "StepFun: Step 3.5 Flash (free)",
-    "tencent/hy3-preview:free": "Tencent: Hy3 preview (free)",
-    "x-ai/grok-code-fast-1:optimized:free": "xAI: Grok Code Fast 1 Optimized (free)",
+    "x-ai/grok-code-fast-1:optimized:free": "xAI: Grok Code Fast 1, retiring May 15 (free)",
 }
 
 

@@ -30,6 +30,9 @@
         "google/lyria-3-pro-preview": {
           "name": "Google: Lyria 3 Pro Preview [Kilo Free]"
         },
+        "inclusionai/ring-2.6-1t:free": {
+          "name": "inclusionAI: Ring-2.6-1T (free) [Kilo Free]"
+        },
         "kilo-auto/free": {
           "name": "Auto Free [Kilo Free]"
         },
@@ -54,11 +57,8 @@
         "stepfun/step-3.5-flash:free": {
           "name": "StepFun: Step 3.5 Flash (free) [Kilo Free]"
         },
-        "tencent/hy3-preview:free": {
-          "name": "Tencent: Hy3 preview (free) [Kilo Free]"
-        },
         "x-ai/grok-code-fast-1:optimized:free": {
-          "name": "xAI: Grok Code Fast 1 Optimized (free) [Kilo Free]"
+          "name": "xAI: Grok Code Fast 1, retiring May 15 (free) [Kilo Free]"
         }
       }
     }
