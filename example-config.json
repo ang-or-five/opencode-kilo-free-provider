@@ -15,9 +15,6 @@
         "baidu/cobuddy:free": {
           "name": "Baidu Qianfan: CoBuddy (free) [Kilo Free]"
         },
-        "baidu/qianfan-ocr-fast:free": {
-          "name": "Baidu: Qianfan-OCR-Fast (free) [Kilo Free]"
-        },
         "deepseek/deepseek-v4-flash:free": {
           "name": "DeepSeek: DeepSeek V4 Flash (free) [Kilo Free]"
         },
